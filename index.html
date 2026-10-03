@@ -327,13 +327,13 @@ h1{
 
   <nav class="program" id="category-nav">
     <button data-cat="airport">Airport</button>
-    <button data-cat="general">General</button>
-    <button data-cat="mainshow" class="active">Main Show</button>
+    <button data-cat="general" class="active">General</button>
+    <button data-cat="mainshow">Main Show</button>
   </nav>
 
   <main class="card">
     <div class="card-meta">
-      <span id="meta-cat"><b>Main Show</b></span>
+      <span id="meta-cat"><b>General</b></span>
       <span id="meta-lang">EN</span>
     </div>
     <p class="comment-text" id="comment-text" lang="en"></p>
@@ -361,6 +361,9 @@ h1{
       if(cat === 'airport'){
         return "MINNIE TO MIUMIU PFW\n#MIUMIUxMINNIE\n#MiuMiu #MINNIE #PFW #MiuMiuSS27";
       }
+      if(cat === 'general'){
+        return "#MIUMIUxMINNIE \n#MINNIE #MiuMiu \n#MiuMiuSS27 #PFW";
+      }
       return "MINNIE SHINES AT PFW\n#MiuMiuSS27xMINNIE\n#MiuMiu #MINNIE #PFW #MiuMiuSS27";
     }
     if(platform === 'ig_post' || platform === 'ig_story'){
@@ -379,7 +382,7 @@ h1{
     mainshow:"Main Show"
   };
 
-  var state = { platform:'ig_post', lang:'en', cat:'mainshow' };
+  var state = { platform:'ig_post', lang:'en', cat:'general' };
 
   // Shuffle bags: every line in a pool is shown once before any line repeats,
   // instead of picking purely at random (which can resurface the same line
